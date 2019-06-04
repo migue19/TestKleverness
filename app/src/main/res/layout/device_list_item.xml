@@ -7,59 +7,59 @@
 
     <android.support.v7.widget.CardView
             android:id="@+id/cardDevice"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:background="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
             app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_margin="5dp">
         <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
                                                      android:layout_height="wrap_content"
                                                      android:background="@color/colorWhite">
 
-            <ImageView
-                    android:id="@+id/imageDevice"
 
+            
+            
+            <ImageView
+                    android:id="@+id/switchDevice"
+                    android:src="@drawable/outlet_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+
+
+            <ImageView
+                    android:id="@+id/imageDevice"
+                    android:src="@drawable/icn_dimmer_1g_1_off"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/switchDevice"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    android:layout_marginStart="10dp"
-                    android:visibility="invisible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
 
 
             <TextView
                     android:id="@+id/txtNameDevice"
                     android:layout_width="wrap_content"
                     android:text="Teléfono1"
-
-                    android:textSize="12sp"
-                    android:layout_marginTop="20dp"
-                    android:textColor="#0f79ff"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/imageDevice"/>
-
-            <TextView
-                    android:id="@+id/txtVinculado"
-                    android:layout_width="wrap_content"
-                    android:text="Pendiente"
-                    android:layout_marginBottom="10dp"
-
-                    android:textSize="10sp"
-                    android:layout_marginTop="2dp"
-                    android:textColor="#ed8946"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintTop_toBottomOf="@id/txtNameDevice"
-                    app:layout_constraintLeft_toRightOf="@id/imageDevice"/>
-
+                    app:layout_constraintTop_toBottomOf="@id/imageDevice"
+                    app:layout_constraintRight_toLeftOf="@id/switchDevice"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
 
 
 
@@ -68,12 +68,16 @@
 
             <ImageView
                     android:id="@+id/icType"
+                    android:src="@drawable/icn_exand_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtNameDevice"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    android:layout_marginEnd="15dp"
+                    app:layout_constraintRight_toLeftOf="@id/switchDevice"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
                     />
 
 

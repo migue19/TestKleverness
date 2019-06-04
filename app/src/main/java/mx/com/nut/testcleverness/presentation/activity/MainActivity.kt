@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(),DevicesAdapter.OnItemClickListener {
         setContentView(R.layout.activity_main)
         serviceHub = Service()
         adapter = DevicesAdapter(this,this)
-        rvDevices.layoutManager = GridLayoutManager(this,3)
+        rvDevices.layoutManager = GridLayoutManager(this,2)
 
         rvDevices.adapter = adapter
 
