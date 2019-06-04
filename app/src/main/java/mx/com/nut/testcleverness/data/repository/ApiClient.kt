@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 
 object ApiClient {
 
-    const  val BASE_URL = "http://d001.kleverness.com/webapi"
+    const  val BASE_URL = "http://d001.kleverness.com/webapi/"
 
     fun makeRetrofitService(): Retrofit {
         val interceptor = HttpLoggingInterceptor()

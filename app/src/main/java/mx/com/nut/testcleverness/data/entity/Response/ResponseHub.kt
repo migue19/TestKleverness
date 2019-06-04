@@ -1,6 +1,4 @@
-package mx.com.nut.testcleverness.data.entity
-
-import java.text.FieldPosition
+package mx.com.nut.testcleverness.data.entity.Response
 
 data class ResponseHub(
     var code : String?,

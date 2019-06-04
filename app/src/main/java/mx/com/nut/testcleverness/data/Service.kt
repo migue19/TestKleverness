@@ -2,7 +2,7 @@ package mx.com.nut.testcleverness.data
 
 import kotlinx.coroutines.*
 import mx.com.nut.testcleverness.data.entity.ErrorModel
-import mx.com.nut.testcleverness.data.entity.ResponseHub
+import mx.com.nut.testcleverness.data.entity.Response.ResponseHub
 import mx.com.nut.testcleverness.data.repository.ApiClient
 import mx.com.nut.testcleverness.data.repository.ApiHub
 import java.io.IOException
@@ -32,9 +32,12 @@ class Service: CoroutineScope {
                     val responseData = response.body()
                     val code: String? = responseData?.code
                     when (code) {
-                        "200", "201" -> successHandler(responseData)
+                        //"200", "201" -> successHandler(responseData)
+                        "0" -> successHandler(responseData)
                     }
                 } else {
+                    val error = response.errorBody()
+                    print(error)
                     //failureHandler(RestService.getErrorModel(response.errorBody()))
                 }
             } catch (exception: IOException) {

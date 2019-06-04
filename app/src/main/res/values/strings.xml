@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TestCleverness</string>
+    <string name="token">
+        eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTk3NTU5MTksImlhdCI6MTU1OTY2OTUxOSwic3ViIjoiYWI0ODYwNzAtNDE0ZS00YmQ5LWJlNDctMTMxYzg0YWZlZTUwIiwidXNlIjoiYWNjZXNzIn0.v7fBFkNj2DOMkUf8ceNqrCJPUMYLgVB9nZuuQBD79B4neAid866JNnaiUJON2ViHpTQ2mwrbwhBUiy0lnAX7HRFxpaIrzT09u3cPzn68gcbyJngKftrpWi-ot8YhWVYPau5MiUWXz_ZeHnptPubzc1165wnhDkQL55vOiXptVpIpstmOn9sXkrd-KIWggAhC2Ey4WcLL3BFx05DqQWs05ABsUxKzPF5Hq18I7XDHsNDJK6HpDFmJ4ls8qcUhQg6DfxgDetfpHrnkwAwkQK8PYPN7mj1CeWJlYCEMAcxSwkJM0kFc3dSBR94Uk4Hwh41dQNUAVxeI0WPFLO4ZVKYEbg
+    </string>
 </resources>
